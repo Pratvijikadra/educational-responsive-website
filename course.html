@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List - C.N Computer Education</title>
+    <link rel="icon" type="image/png" href="images/cn-logo-titlebar.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="course.css">
+    <!-- js file -->
+    <script src="course.js"></script>
+
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-xl shadow sticky-top my-navbar bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/nav-logo.png" alt="logo" height="80" width="175">
+            </a>
+
+            <!-- Toggler now opens OFFCANVAS -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto mx-auto gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+                    <li class="nav-item"> <a class="nav-link course" href="course.html">Our Courses</a></li>
+
+
+                    <li class="nav-item dropdown dropdown-offcanvas">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            Why CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i>
+                        </a>
+                        <ul class=" dropdown-menu  dropdown-menu-offcanvas">
+                            <li><a class="dropdown-item dropdown-item-offcanvas" href="faculty.html">Faculty</a></li>
+                            <li><a class="dropdown-item dropdown-item-offcanvas" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2 input-border" type="text" placeholder="Search..">
+                    <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><img src="images/nav-logo.png" alt="logo" height="65" width="145"></h5>
+            <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+                <li class="nav-item"> <a class="nav-link course" href="course.html">Our Courses</a></li>
+
+                <li class="nav-item dropdown dropdown-offcanvas">
+                    <a class="nav-link" data-bs-toggle="dropdown" style="cursor: pointer;">Why
+                        CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-offcanvas">
+                        <li><a class="dropdown-item dropdown-item-offcanvas" href="faculty.html">Faculty</a></li>
+                        <li><a class="dropdown-item dropdown-item-offcanvas" href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+
+            <form class="d-flex mt-5" id="searchForm">
+                <input class="form-control me-2" type="text" id="searchInput" placeholder="Search..">
+                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- offcanvas over -->
+
+    <div class="container-xl mt-4 ">
+        <div class="home padding">
+            <a href="index.html" class="pe-2">Home</a> <i class="fa-solid fa-angle-right"></i>
+            <b style="font-size: 17px;" class="ps-2">Our Courses</b>
+        </div>
+    </div>
+
+
+
+    <section class="courses-section">
+        <div class="container-xl">
+
+            <!-- Title -->
+            <div class="text-center section-title mb-5">
+                <h1>Our Courses</h1>
+                <p>We provide high-quality professional courses with expert instructors, lifetime access and
+                    career-focused learning.</p>
+            </div>
+
+            <!-- ROW -->
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://web.graminshiksha.com/Upload/jjcixcCCC-Course.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>CCC – Course on Computer Concepts</h5>
+                            <p>CCC is a basic level computer course that main objective of this course is to provide
+                                fundamental knowledge of computers, so that learners can use computers confidently in
+                                daily life and office work.</p>
+
+                            <div class="d-flex justify-content-between mb-3 course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="CCC – Course on Computer Concepts"
+                                data-desc="CCC is a basic level computer course that main objective of this course is to provide fundamental knowledge of computers, so that learners can use computers confidently in daily life and office work."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="Computer Operator, Office Assistant, Data Entry Operator, Junior Typist, Office Clerk, etc"
+                                data-benefits="Basic computer knowledge|Office & daily computer usage|Government-recognized certificate">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="tally-basic">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/basic-tally.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Tally Prime with GST(Basic)</h5>
+                            <p>Basic Tally Prime is an entry-level accounting course that focuses on basic accounting
+                                concepts and fundamental GST operations using Tally Prime.
+                                It helps learners understand day-to-day accounting work and basic GST compliance.</p>
+
+                            <div class="d-flex justify-content-between mb-3 course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Begginer
+                                </span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Tally Prime with GST(Basic)"
+                                data-desc="Basic Tally Prime is an entry-level accounting course that focuses on basic accounting concepts and fundamental GST operations using Tally Prime. It helps learners understand day-to-day accounting work and basic GST compliance."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="Junior Accountant, Tally Operator, Accounts Assistant, etc"
+                                data-benefits="Easy to learn for beginners|Understand GST basics (CGST, SGST, IGST)|Create sales and purchase invoices with GST">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/tally.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>Tally Prime with GST(Advance)</h5>
+                            <p>Tally Prime with GST (Advanced) is a professional-level course that covers advanced
+                                accounting features and complete GST compliance, including returns, reports, and
+                                taxation rules, using Tally Prime.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">5 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Tally Prime with GST(Advance)"
+                                data-desc="Tally Prime with GST (Advanced) is a professional-level course that covers advanced accounting features and complete GST compliance, including returns, reports, and taxation rules, using Tally Prime."
+                                data-duration="5 Months" data-level="Advanced"
+                                data-career="Accountant, Senior Accounts Executive, etc"
+                                data-benefits="Advanced accounting|Generate advanced financial and GST reports|Higher efficiency in corporate accounting work">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="banking">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/banking.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Banking & Finance</h5>
+                            <p>Banking & Finance is a field that deals with management of money, financial transactions,
+                                investments, loans, and financial services.
+                                It includes how banks and financial institutions accept deposits, provide loans, manage
+                                accounts, and offer financial products to individuals and businesses.</p>
+
+                            <div class="d-flex justify-content-between mb-3 course-info">
+                                <span class="mt-4">6 Months</span>
+                                <span class="mt-4">intermediate</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Banking & Finance"
+                                data-desc="Banking & Finance is a field that deals with management of money, financial transactions, investments, loans, and financial services.
+It includes how banks and financial institutions accept deposits, provide loans, manage accounts, and offer financial products to individuals and businesses."
+                                data-duration="6 Months" data-level="intermediate"
+                                data-career="Bank Clerk, Customer Service Officer, Accounts & Finance Assistant, etc"
+                                data-benefits="Knowledge of loans, interest rates, and credit management|Helps in managing personal and business finances|Improves financial decision-making skills">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 5 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/c++.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>C & C++ Programming</h5>
+                            <p>C & C++ Programming are high-level programming languages used to develop software, system
+                                applications, and performance-critical programs.
+                                C is a procedural programming language mainly used for system-level programming.
+                                C++ is an extension of C that supports object-oriented programming (OOP), making it
+                                suitable for complex applications.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">5 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="C & C++ Programming" data-desc="C & C++ Programming are high-level programming languages used to develop software, system applications, and performance-critical programs.
+C is a procedural programming language mainly used for system-level programming.
+C++ is an extension of C that supports object-oriented programming (OOP), making it suitable for complex applications."
+                                data-duration="5 Months" data-level="Beginner"
+                                data-career="C/C++ Programmer, Game Developer, Application Developer, etc"
+                                data-benefits="Strong understanding of programming fundamentals|Improves logical thinking and problem-solving skills|Forms a base for learning other languages like Java, Python">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 6 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="java">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/java.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Java Programming</h5>
+                            <p>Java Programming is a high-level, object-oriented programming language used to develop
+                                platform-independent applications. Core Java focuses on basic programming concepts and
+                                fundamental features of Java, which are required before learning Advanced Java.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Java Programming"
+                                data-desc="Java Programming is a high-level, object-oriented programming language used to develop platform-independent applications.
+Core Java focuses on basic programming concepts and fundamental features of Java, which are required before learning Advanced Java."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="Junior Java Developer, Backend Developer (Entry Level), etc"
+                                data-benefits="Easy to learn and beginner-friendly|Platform independent (Write Once, Run Anywhere)|Strong foundation in object-oriented concepts|Base for learning Advanced Java, Spring, and Android">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 7 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="advanced-java">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/ad-java.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Advance Java</h5>
+                            <p>Advanced Java refers to the set of Java technologies used to build dynamic, secure, and
+                                scalable web applications. It mainly includes Servlets, JSP, JDBC, MVC architecture, and
+                                web technologies, which are used for server-side development.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">1 Year</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Advance Java"
+                                data-desc="Advanced Java refers to the set of Java technologies used to build dynamic, secure, and scalable web applications.
+It mainly includes Servlets, JSP, JDBC, MVC architecture, and web technologies, which are used for server-side development."
+                                data-duration="1 Year" data-level="Advanced"
+                                data-career="Java Web Developer, Full Stack Developer (Java – Entry Level), etc"
+                                data-benefits="Develop dynamic web applications|Understand client–server architecture|Strong base for frameworks like Spring & Spring Boot">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 8 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/dcp.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>DCP (Diploma in Computer Programming)</h5>
+                            <p>DCP is a course that focuses on basic to intermediate programming skills.It helps
+                                students learn how to write programs, understand logic, and develop simple software
+                                applications using programming languages.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="DCP (Diploma in Computer Programming)"
+                                data-desc="DCP is a course that focuses on basic to intermediate programming skills.It helps students learn how to write programs, understand logic, and develop simple software applications using programming languages."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="Computer Operator, Entry-level Developer, Software Trainee, etc"
+                                data-benefits="Strong foundation in programming concepts|Learn basic coding and software development|Helps in understanding how programs work internally">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 9 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/diwt.jpeg">
+                        </div>
+                        <div class="course-content">
+                            <h5>DIWT (Diploma in Information & Web Technology)</h5>
+                            <p>DIWT is a professional course that focuses on web development and information technology
+                                skills. It teaches how to design, develop, and manage websites using modern web
+                                technologies.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="DIWT (Diploma in Information & Web Technology)"
+                                data-desc="DIWT is a professional course that focuses on web development and information technology skills. It teaches how to design, develop, and manage websites using modern web technologies."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="Web Designer, UI Designer, Web Developer, etc"
+                                data-benefits="Knowledge of HTML, CSS, JavaScript|Learn website designing and development|Increases job opportunities in IT and web fields">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 10 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="excel">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/excel.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Advance Excel</h5>
+                            <p>Advanced Excel is a tool for analyzing, visualizing, and managing data efficiently. It
+                                includes formulas, charts, and automation to handle complex datasets.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Advance Excel"
+                                data-desc="Advanced Excel is a tool for analyzing, visualizing, and managing data efficiently. It includes formulas, charts, and automation to handle complex datasets."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="Data Analyst (Entry Level), Data and reporting roles, etc"
+                                data-benefits="Advanced use of formulas and functions|Data analysis using Pivot Tables & Pivot Charts|Automate tasks using macros">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 11 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/photoshop.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Photoshop</h5>
+                            <p>Adobe Photoshop is a professional image editing and graphic design software used to
+                                create, edit, and enhance digital images.
+                                It is widely used for photo editing, poster designing, banners, social media graphics,
+                                and digital artwork.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Photoshop" data-desc="Adobe Photoshop is a professional image editing and graphic design software used to create, edit, and enhance digital images.
+It is widely used for photo editing, poster designing, banners, social media graphics, and digital artwork."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="Graphic Designer, Photo Editor, Creative Designer, Digital Marketing Designer, etc"
+                                data-benefits="Design posters, banners, flyers, and ads|Create social media and marketing creatives|Professional photo editing and retouching">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 12 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/react.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>React Js</h5>
+                            <p>React JS is a JavaScript library used to build fast, interactive, and dynamic user
+                                interfaces, especially single-page applications (SPAs).
+                                It is developed and maintained by Meta (Facebook) and is widely used in modern web
+                                development.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="React Js"
+                                data-desc="React JS is a JavaScript library used to build fast, interactive, and dynamic user interfaces, especially single-page applications (SPAs).
+                                It is developed and maintained by Meta (Facebook) and is widely used in modern web development."
+                                data-duration="3 Months" data-level="Advanced"
+                                data-career="React Developer, Frontend Developer, JavaScript Developer, etc"
+                                data-benefits="Fast and efficient UI development| Component-based architecture (reusable components)| High demand skill in modern web development">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 13 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/mern.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>MERN Stack</h5>
+                            <p>MERN Stack is a full stack web development technology stack used to build modern,
+                                dynamic, and scalable web applications.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">1 Year</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="MERN Stack" data-desc="MERN Stack is a full stack web development technology stack used to build modern, dynamic, and scalable web applications.
+
+                              => It consists of four main technologies:
+MongoDB – Database
+Express.js – Backend framework
+React.js – Frontend library
+Node.js – Server environment" data-duration="1 Year" data-level="Advanced"
+                                data-career="MERN Stack Developer, Full Stack Developer, etc"
+                                data-benefits="Complete frontend + backend development skills| Build single-page and real-time applications| JavaScript used across the entire stack| Strong demand in IT industry">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 14 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/mean.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>MEAN Stack</h5>
+                            <p>MEAN Stack is a full stack web development technology stack used to develop dynamic and
+                                scalable web applications.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">1 Year</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="MEAN Stack" data-desc="MEAN Stack is a full stack web development technology stack used to develop dynamic and scalable web applications.
+
+                              => It consists of four main technologies:
+MongoDB – NoSQL Database
+Express.js – Backend framework
+Angular – Frontend framework
+Node.js – Server environment" data-duration="1 Year" data-level="Advanced"
+                                data-career="MEAN Stack Developer, Full Stack Developer, Angular Developer, Backend Developer, etc"
+                                data-benefits="Complete frontend and backend development| Suitable for single-page applications (SPAs)| JavaScript used across the entire stack| High performance and scalability">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 15 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/corel.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>CorelDRAW</h5>
+                            <p>CorelDRAW is a vector graphic design software used to create logos, illustrations,
+                                layouts, and print-ready designs. It is widely used in printing, advertising, and
+                                graphic design industries.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Intermediate</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="CorelDRAW" data-desc="CorelDRAW is a vector graphic design software used to create logos, illustrations, layouts, and print-ready designs.
+It is widely used in printing, advertising, and graphic design industries." data-duration="3 Months"
+                                data-level="Intermediate"
+                                data-career="Graphic Designer, Logo Designer, Freelance Designer, etc"
+                                data-benefits="Create logos, banners, posters, and visiting cards| Best for print media designs| Vector-based (no quality loss on zoom)| Easy to learn for beginners|High demand in printing and advertising field">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 16 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/database.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>Database Administrator (DBA)</h5>
+                            <p>A Database Administrator (DBA) is a professional responsible for managing, maintaining,
+                                and securing databases used by applications and organizations. A DBA ensures that data
+                                is available, accurate, secure, and performs efficiently.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Intermediate</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Database Administrator (DBA)" data-desc="A Database Administrator (DBA) is a professional responsible for managing, maintaining, and securing databases used by applications and organizations.
+A DBA ensures that data is available, accurate, secure, and performs efficiently." data-duration="3 Months"
+                                data-level="Intermediate"
+                                data-career="Database Administrator, SQL Developer, Junior DBA, etc"
+                                data-benefits="High demand role in IT industry, Critical responsibility for data security and reliability, Works with large and real-time data| Opportunity to work with advanced database technologies">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 17 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/html-css.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>HTML/CSS</h5>
+                            <p>HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the core
+                                technologies used to create and design web pages.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="HTML/CSS" data-desc="HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the core technologies used to create and design web pages.
+                                HTML is used to structure web content.
+CSS is used to style and layout web pages." data-duration="4 Months" data-level="Beginner"
+                                data-career="Web Designer, Frontend Developer (Junior), etc"
+                                data-benefits="Foundation of web development| Easy to learn for beginners| Create responsive and attractive websites| Required for learning JavaScript and frameworks">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 18 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/js-jquery.jpeg">
+                        </div>
+                        <div class="course-content">
+                            <h5>JavaScript/jQuery</h5>
+                            <p>JavaScript is a programming language used to create interactive and dynamic behavior on
+                                websites. jQuery is a JavaScript library that simplifies JavaScript coding for tasks
+                                like DOM manipulation, animations, and AJAX.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Intermediate</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="JavaScript/jQuery"
+                                data-desc="JavaScript is a programming language used to create interactive and dynamic behavior on websites. jQuery is a JavaScript library that simplifies JavaScript coding for tasks like DOM manipulation, animations, and AJAX."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="JavaScript Developer, Frontend Developer, UI Developer, etc"
+                                data-benefits="Reduces complex JavaScript code using jQuery| Simplifies client-side scripting| Makes websites interactive and user-friendly">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 19 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/Bootstrap.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Bootstrap</h5>
+                            <p>Bootstrap is a popular front-end framework used to design responsive and mobile-friendly
+                                websites quickly. It provides ready-made CSS and JavaScript components like buttons,
+                                forms, grids, and navigation bars.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">2 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Bootstrap"
+                                data-desc="Bootstrap is a popular front-end framework used to design responsive and mobile-friendly websites quickly. It provides ready-made CSS and JavaScript components like buttons, forms, grids, and navigation bars."
+                                data-duration="2 Months" data-level="Advanced"
+                                data-career="Frontend Developer, Web Designer, UI Developer, etc"
+                                data-benefits="Fast and easy web design| Mobile-first and responsive layouts| Ready-to-use components| Consistent design across browsers|Beginner-friendly framework">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 20 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="web-design">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/web-design.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Web Designing</h5>
+                            <p>Web Designing is the process of creating the visual layout, structure, and user
+                                experience of websites. It focuses on how a website looks, feels, and interacts with
+                                users, using design and front-end technologies.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">8 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Web Designing"
+                                data-desc="Web Designing is the process of creating the visual layout, structure, and user experience of websites. It focuses on how a website looks, feels, and interacts with users, using design and front-end technologies."
+                                data-duration="8 Months" data-level="Beginner"
+                                data-career="Frontend Developer, Web Designer, UI Developer, Creative Designer, Freelance Web Designer, etc"
+                                data-benefits="Learn to create attractive and user-friendly websites| Improves creativity and design thinking| Foundation for frontend and full stack development">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 21 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/python.jpeg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Core Python</h5>
+                            <p>Core Python refers to the fundamental concepts of the Python programming language used to
+                                write simple to moderately complex programs. It focuses on basic syntax, logic building,
+                                and core programming concepts, which are required before learning advanced Python
+                                topics.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Core Python"
+                                data-desc="Core Python refers to the fundamental concepts of the Python programming language used to write simple to moderately complex programs. It focuses on basic syntax, logic building, and core programming concepts, which are required before learning advanced Python topics."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="Python Developer (Junior), Backend Developer (Basic), etc"
+                                data-benefits="Easy to learn and beginner-friendly| Clean and readable syntax| Used for automation and scripting">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 22 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/php.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>Core PHP</h5>
+                            <p>Core PHP(Hypertext Preprocessor) refers to the basic and fundamental concepts of PHP, a
+                                server-side scripting language used to create dynamic and database-driven websites. It
+                                focuses on PHP syntax, logic, forms, sessions, and database connectivity, which are
+                                essential before learning advanced PHP frameworks.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">3 Months</span>
+                                <span class="mt-4">Beginner</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Core PHP"
+                                data-desc="Core PHP refers to the basic and fundamental concepts of PHP, a server-side scripting language used to create dynamic and database-driven websites. It focuses on PHP syntax, logic, forms, sessions, and database connectivity, which are essential before learning advanced PHP frameworks."
+                                data-duration="3 Months" data-level="Beginner"
+                                data-career="PHP Developer (Junior), Web Developer, Backend Developer (Entry Level), etc"
+                                data-benefits="Easy to learn for beginners| Works well with databases like MySQL| Forms a base for learning Laravel, CodeIgniter">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 23 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="python">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/python-fullstack.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>Python Full Stack</h5>
+                            <p>Full Stack in Python refers to the development of complete web applications using Python
+                                for
+                                backend and modern frontend technologies. It covers both client-side (frontend) and
+                                server-side (backend) development along with
+                                database management.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">1 Year</span>
+                                <span class="mt-4">Intermediate</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Python Full Stack" data-desc="Full Stack in Python refers to the development of complete web applications using Python for backend and modern frontend technologies. It covers both client-side (frontend) and server-side (backend) development along with database management.
+
+                                =>Common technologies included:
+Frontend: HTML, CSS, JavaScript, Bootstrap
+Backend: Python (Django / Flask)
+Database: MySQL / MongoDB" data-duration="1 Year" data-level="Intermediate"
+                                data-career="Full Stack Python Developer, Python Web Developer, IT and software companies, etc"
+                                data-benefits="Learn complete end-to-end web development| Strong backend logic using Python| Build real-world web applications">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 23 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/php-fullstack.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>PHP Full Stack</h5>
+                            <p>PHP(Hypertext Preprocessor) Full Stack refers to the development of complete
+                                webapplications using PHP for backend and modern frontend technologies. It includes both
+                                client-side (frontend) and server-side (backend) development along with database
+                                management.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">1 Year</span>
+                                <span class="mt-4">Intermediate</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="PHP Full Stack" data-desc="Full Stack in PHP refers to the development of complete web applications using PHP for backend and modern frontend technologies. It includes both client-side (frontend) and server-side (backend) development along with database management.
+
+                                =>Common technologies included:
+Frontend: HTML, CSS, JavaScript, Bootstrap
+Backend: PHP (Core PHP / Laravel)
+Database: MySQL
+Tools: Apache / XAMPP" data-duration="1 Year" data-level="Intermediate"
+                                data-career="PHP Full Stack Developer, Web Application Developer, Software Developer, etc"
+                                data-benefits="Learn complete end-to-end web development| Build dynamic and database-driven websites| Good scope for freelancing">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 24 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/asp.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>ASP.NET with C#</h5>
+                            <p>ASP.NET with C# is a server-side web development framework developed by Microsoft, used
+                                to build dynamic, secure, and scalable web applications. C# is the primary programming
+                                language used in ASP.NET for backend development.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="ASP.NET with C#"
+                                data-desc="ASP.NET with C# is a server-side web development framework developed by Microsoft, used to build dynamic, secure, and scalable web applications. C# is the primary programming language used in ASP.NET for backend development."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="ASP.NET Developer, C# Developer, Full Stack .NET Developer, etc"
+                                data-benefits="Build powerful and secure web applications| Used for enterprise-level applications| Supports MVC and Web API architecture | Works well with SQL Server databases">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 25 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/nodejs.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Node JS</h5>
+                            <p>Node.js is a JavaScript runtime environment used to build fast, scalable, and
+                                high-performance server-side applications. It allows developers to run JavaScript
+                                outside the browser, mainly for backend development.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Node JS"
+                                data-desc="Node.js is a JavaScript runtime environment used to build fast, scalable, and high-performance server-side applications. It allows developers to run JavaScript outside the browser, mainly for backend development."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="Node.js Developer, Backend Developer, JavaScript Developer, etc"
+                                data-benefits="Uses JavaScript for backend development| Non-blocking and event-driven architecture| Strong community and rich package ecosystem (npm) | Perfect for MERN and MEAN stack development">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 26 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/intership.png">
+                        </div>
+                        <div class="course-content">
+                            <h5>Internship Projects</h5>
+                            <p>Internship Projects are practical, real-world projects done by students during or after a
+                                course to apply their theoretical knowledge into practice. These projects are usually
+                                part of training or internship programs and help students gain industry-level
+                                experience.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">As per student requirement</span>
+
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Internship Projects"
+                                data-desc="Internship Projects are practical, real-world projects done by students during or after a course to apply their theoretical knowledge into practice. These projects are usuallypart of training or internship programs and help students gain industry-level experience."
+                                data-duration="As per student requirement"
+                                data-career="Intern / Junior Programmer, Project Assistant, IT Support Executive, etc"
+                                data-benefits="Gain hands-on practical experience| Understand real-world project workflow| Strengthen resume and portfolio">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 27 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="AI">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/ai-ml.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>AI & ML (Artificial Intelligence & Machine Learning)</h5>
+                            <p>AI & ML is a field of computer science that focuses on creating intelligent systems which
+                                can learn from data, make decisions, and improve automatically.
+
+                                Artificial Intelligence (AI) enables machines to mimic human intelligence.
+
+                                Machine Learning (ML) is a subset of AI that allows systems to learn from experience
+                                without being explicitly programmed.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="AI & ML (Artificial Intelligence & Machine Learning)"
+                                data-desc="AI & ML is a field of computer science that focuses on creating intelligent systems which can learn from data, make decisions, and improve automatically.
+
+1. Artificial Intelligence (AI) enables machines to mimic human intelligence.
+2. Machine Learning (ML) is a subset of AI that allows systems to learn from experience without being explicitly programmed." data-duration="4 Months" data-level="Intermediate"
+                                data-career="Data Scientist, Software Engineer (AI/ML), Research Analyst, etc"
+                                data-benefits="Automates complex tasks and processes| High-demand and future-oriented technology| Forms a base for data science and deep learning | Used in many industries like healthcare, finance, and IT">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 28 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="data-science">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/data-science.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Data Science & Big Data Analytics</h5>
+                            <p>Data Science & Big Data Analytics is a field that focuses on collecting, processing, and
+                                analyzing large volumes of data to extract useful insights and patterns for decision
+                                making.
+                                It combines statistics, programming, data analysis, and machine learning to solve
+                                real-world problems.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Data Science & Big Data Analytics"
+                                data-desc="Data Science & Big Data Analytics is a field that focuses on collecting, processing, and analyzing large volumes of data to extract useful insights and patterns for decision making. It combines statistics, programming, data analysis, and machine learning to solve real-world problems."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="Data Scientist, Data Analyst, Big Data Engineer, etc"
+                                data-benefits="Improves analytical and problem-solving skills| Works with large and complex datasets| Strong career growth and attractive salary">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- CARD 29 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="cyber-security">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/cyber-security.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Cyber Security & Ethical Hacking</h5>
+                            <p>Cyber Security & Ethical Hacking is a field focused on protecting computer systems,
+                                networks, and data from cyber threats. Ethical Hacking involves legally testing systems
+                                to find security vulnerabilities so they can be fixed before attackers exploit them.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Cyber Security & Ethical Hacking"
+                                data-desc="Cyber Security & Ethical Hacking is a field focused on protecting computer systems, networks, and data from cyber threats. Ethical Hacking involves legally testing systems to find security vulnerabilities so they can be fixed before attackers exploit them."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="Ethical Hacker, Cyber Security Analyst, etc"
+                                data-benefits="High demand and future-proof career| Protects systems from hacking and cyber attacks| Opportunities to work with advanced security tools">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 30 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="cloud-Computing">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/cloud-Computing-.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Cloud Computing</h5>
+                            <p>Cloud Computing is a technology that allows users to store, manage, and process data and
+                                applications over the internet instead of local computers or servers. It provides
+                                on-demand access to servers, storage, databases, networking, and software services.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Cloud Computing"
+                                data-desc="Cloud Computing is a technology that allows users to store, manage, and process data and applications over the internet instead of local computers or servers. It provides on-demand access to servers, storage, databases, networking, and software services."
+                                data-duration="4 Months" data-level="Advanced"
+                                data-career="Cloud Architect, Cloud Engineer, etc"
+                                data-benefits="Access data and applications from anywhere| Better data security and backup| Automatic updates and maintenance">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 31 -->
+
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="blockchain-technology">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/Blockchain.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Blockchain Technology</h5>
+                            <p>Blockchain Technology is a decentralized and distributed digital ledger system used to
+                                securely record transactions across multiple computers. Each transaction is stored in a
+                                block and linked to the previous one, forming a chain, making data transparent and
+                                tamper-proof.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Blockchain Technology"
+                                data-desc="Blockchain Technology is a decentralized and distributed digital ledger system used to securely record transactions across multiple computers. Each transaction is stored in a block and linked to the previous one, forming a chain, making data transparent and tamper-proof."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="Blockchain Engineer, Blockchain Architect, Crypto Analyst, etc"
+                                data-benefits="High security and data transparency| Decentralized system (no single authority)| Prevents data tampering and fraud">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 33 -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-sm-auto mx-lg-0" id="iot">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/internet-of-things.jpg">
+                        </div>
+                        <div class="course-content">
+                            <h5>Internet of Things (IoT)</h5>
+                            <p>Internet of Things (IoT) refers to the network of interconnected devices that can collect
+                                and exchange data over the internet. These devices, often embedded with sensors and
+                                software, enable automation and real-time monitoring in various industries.</p>
+
+                            <div class="d-flex justify-content-between mb-3  course-info">
+                                <span class="mt-4">4 Months</span>
+                                <span class="mt-4">Advanced</span>
+                            </div>
+
+                            <button class="course-btn" data-bs-toggle="modal" data-bs-target="#courseModal"
+                                data-title="Internet of Things (IoT)"
+                                data-desc="Internet of Things (IoT) refers to the network of interconnected devices that can collect and exchange data over the internet. These devices, often embedded with sensors and software, enable automation and real-time monitoring in various industries."
+                                data-duration="4 Months" data-level="Intermediate"
+                                data-career="IoT Developer, IoT Engineer, Hardware & Networking Engineer, etc"
+                                data-benefits="Real-time monitoring| Automation capabilities| Enhanced connectivity| Data-driven insights">
+                                <span style="font-size: large;">View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="courseModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p id="modalDesc" class="text-muted"></p>
+
+                    <!-- Course Info -->
+                    <div class="mb-3">
+                        <span class="badge fw-medium bg-light text-dark me-2" id="modalDuration"></span>
+                        <span class="badge fw-medium bg-light text-dark me-2" id="modalLevel"></span>
+                        <span class="badge fw-medium bg-light text-dark me-2">Lifetime Access</span>
+                        <span class="badge fw-medium bg-light text-dark">Expert Instructors</span>
+                    </div>
+
+                    <h6>Course Benefits</h6>
+                    <ul class="list-unstyled" id="modalBenefits">
+
+                    </ul>
+
+                    <h6>Career Opportunities</h6>
+                    <p class="text-muted" id="modalCareer"> </p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary" id="inquiryBtn">Enquiry</a>
+                    <a href="javascript:void(0);" class="btn enroll-btn">Enroll Now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="inquiryModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Course Enquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- ✅ FORM START -->
+                    <form id="enquiryForm">
+
+                        <div class="mb-3">
+                            <label class="form-label">Course</label>
+                            <input type="text" class="form-control" id="enquiryCourse" name="course" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mobile Number</label>
+                            <input type="tel" class="form-control" name="mobile" placeholder="Enter mobile number"
+                                required maxlength="10" inputmode="numeric" pattern="[0-9]{10}">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" name="message" rows="3"
+                                placeholder="I want more details about this course"></textarea>
+                        </div>
+
+                        <!-- ✅ FOOTER BUTTONS INSIDE FORM -->
+                        <div class="modal-footer px-0">
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Cancel</button>
+
+                            <!-- ✅ REAL SUBMIT BUTTON -->
+                            <button type="submit" class="btn btn-primary inquire-btn">
+                                Submit Enquiry
+                            </button>
+                        </div>
+
+                    </form>
+                    <!-- ✅ FORM END -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="container-xl footer-padding">
+            <div class="row g-4">
+
+                <!-- Column 1 -->
+                <div class="col-12col-md-6 col-xl-4 ">
+                    <img src="images/nav-logo.png" alt="cn Logo" style="width: 200px;height: 90px;" class="mb-3">
+                    <p><strong> <i class="fas fa-map-marker-alt location-icon"></i> Address:</strong><br>
+                        <a href="https://www.google.com/maps/search/?api=1&query=C.N+Computer+Education,+305+Shashwat+Mahadev+Complex,+Vastral,+Ahmedabad"
+                            id="address" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="view location on map">
+                            305 - Shashwat Mahadev Complex,<br> Opp, Suryam Greens ,<br> New RTO Road, Vastral,<br>
+                            Ahmedabad-382418</a>
+                    </p>
+
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12col-md-6 col-xl">
+                    <h4 class="pb-4">Online Platform</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html"> About Us </a></li>
+                        <li><a href="course.html"> Course </a></li>
+                        <li><a href="faculty.html"> Faculty </a></li>
+                        <li><a href="blog.html"> Blog </a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12col-md-6 col-xl">
+                    <h4 class="pb-4">Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html"> Contact Us </a></li>
+
+
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-12col-md-6 col-xl">
+                    <h4 class="pb-4">Contacts</h4>
+
+                    <ul class="footer-list">
+                        <li id="footer-number"><a href="tel:+91 9054731523">+91 9054731523</a></li>
+                        <li id="footer-number"><a href="tel:+91 8485930451">+91 8485930451</a></li>
+                    </ul>
+
+                    <div class="social-icons-footer mt-3">
+                        <a href="https://www.facebook.com/share/1DTDqktGKe/?mibextid=wwXIfr" target="_blank"> <i
+                                class="fab fa-facebook-f" style="color: #1877F2;"></i></a>
+                        <a href="https://www.instagram.com/cn_computer_education_vastral?igsh=cHI4eTYya3oxcjh0&utm_source=qr"
+                            target="_blank"><i class="fab fa-instagram" style="color: purple;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            Copyright 2026 <span>C.N Computer Education</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        const courseModal = document.getElementById('courseModal');
+        let selectedCourse = "";
+
+        // Show course details modal
+        courseModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+
+            selectedCourse = button.getAttribute('data-title'); // For enquiry modal
+
+            // Fill modal content
+            document.getElementById('modalTitle').innerText =
+                button.getAttribute('data-title');
+
+            document.getElementById('modalDesc').innerText =
+                button.getAttribute('data-desc');
+
+            document.getElementById('modalDuration').innerText =
+                button.getAttribute('data-duration');
+
+            document.getElementById('modalLevel').innerText =
+                button.getAttribute('data-level');
+
+            document.getElementById('modalCareer').innerText =
+                button.getAttribute('data-career');
+
+            // ✅ Dynamic benefits
+            const benefits = button.getAttribute('data-benefits').split('|');
+            const benefitsList = document.getElementById('modalBenefits');
+            benefitsList.innerHTML = '';
+            benefits.forEach(item => {
+                benefitsList.innerHTML += `<li>✔ ${item}</li>`;
+            });
+        });
+
+        // Inquiry button click
+        document.getElementById('inquiryBtn').addEventListener('click', function () {
+            // Close current course modal
+            const courseModalInstance = bootstrap.Modal.getInstance(courseModal);
+            courseModalInstance.hide();
+
+            // Open enquiry modal
+            const enquiryModal = new bootstrap.Modal(document.getElementById('inquiryModal'));
+            document.getElementById('enquiryCourse').value = selectedCourse;
+            enquiryModal.show();
+        });
+    </script>
+
+
+
+    <!-- scroll button -->
+    <div id="scrollIndicator" onclick="scrollToTop()">
+        <svg width="60" height="60">
+            <circle cx="30" cy="30" r="26" class="bg"></circle>
+            <circle cx="30" cy="30" r="26" class="progress"></circle>
+        </svg>
+        <span class="arrow">↑</span>
+    </div>
+
+    <script>
+        const indicator = document.getElementById("scrollIndicator");
+        const progress = document.querySelector(".progress");
+        const totalLength = 163;
+
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const docHeight =
+                document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight;
+
+            if (scrollTop > 100) {
+                indicator.style.display = "block";
+            } else {
+                indicator.style.display = "none";
+            }
+
+            progress.style.strokeDashoffset =
+                totalLength - totalLength * scrollPercent;
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <script>
+        // get in touch
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
+
+
+</body>
+
+</html>

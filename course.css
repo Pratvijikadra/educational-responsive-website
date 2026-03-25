@@ -1,0 +1,506 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+:root {
+    --primary-color: #2DAA9E;
+    --bg-color: #FFFFFF;
+    --text-color: #F5EFE6;
+    --dark-bg: #222;
+    --gray-color: #CBCBCB;
+    --hover-color: #238C82;
+}
+
+
+
+/* Hover background */
+.apply-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Shine animation on hover */
+.apply-btn:hover::before {
+    left: 130%;
+}
+
+/* Arrow move on hover */
+.apply-btn:hover i {
+    transform: translateX(6px);
+}
+
+/* nav css */
+
+
+.nav-link {
+    color: black !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+
+.navbar-toggler:hover {
+    box-shadow: 0 0 6px var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+
+
+
+.course {
+    color: var(--primary-color) !important;
+}
+
+/* dropdwon hover karne pr dikhe */
+/* Hover dropdown */
+.nav-item.dropdown-offcanvas:hover .dropdown-menu-offcanvas {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
+    transform: translateY(0);
+    /* slide down */
+
+}
+
+/* Smooth animation */
+.dropdown-menu-offcanvas {
+    display: block !important;
+    /* IMPORTANT */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    /* thoda upar se */
+    transition: all 0.35s ease;
+    margin-top: 8px;
+    border: none !important;
+    padding: 8px 0;
+    box-shadow:
+        0px 2px 4px rgba(0, 0, 0, 0.12),
+        /* bottom soft */
+        0px 4px 10px rgba(0, 0, 0, 0.08);
+    /* extra smooth */
+
+}
+
+
+
+
+.dropdown-item-offcanvas {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    /* padding: 0 8px; */
+    padding: 10px 20px !important;
+
+}
+
+/* Dropdown item hover */
+.dropdown-menu-offcanvas .dropdown-item-offcanvas:hover {
+    color: var(--primary-color) !important;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+
+
+}
+
+
+/* Offcanvas dropdown - hover open instantly */
+.offcanvas-body .dropdown-menu-offcanvas {
+    display: none !important;
+    /* Closed by default */
+    transition: all 0.3s ease;
+}
+
+.offcanvas-body .dropdown-offcanvas:hover .dropdown-menu-offcanvas {
+    display: block !important;
+    /* Hover par turant show */
+    max-height: none;
+    /* Full height */
+    opacity: 1;
+    /* Full opacity */
+    visibility: visible;
+    /* Visible */
+    padding: 0.5rem 0;
+    /* Normal padding */
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    /* Optional border */
+
+}
+
+
+
+.input-border {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 5px rgba(45, 170, 158, 0.7) !important;
+    /* soft glow */
+    outline: none !important;
+}
+
+
+
+/* add my style */
+.search-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: 0.3s;
+    border: none;
+    font-size: 18px;
+
+}
+
+.search-btn:hover {
+    background: var(--hover-color);
+}
+
+
+
+/* offcanvas */
+
+.offcanvas-close-btn {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 5px rgba(45, 170, 158, 0.7) !important;
+    /* soft glow */
+    outline: none !important;
+}
+
+.offcanvas-start {
+    width: 350px !important;
+    /* jitni kam chahiye utni set karo */
+}
+
+.offcanvas {
+    transition: transform 0.6s ease-in-out !important;
+}
+
+.offcanvas-backdrop.show {
+    transition: opacity 0.6s ease-in-out !important;
+}
+
+
+/* nav css end */
+
+@media (max-width:1200px) {
+    .padding {
+        padding: 0 10px;
+    }
+}
+
+.home>a {
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.home>a:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+/* ===== Section ===== */
+.courses-section {
+    padding: 70px 20px;
+}
+
+.section-title h1 {
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* ===== Card ===== */
+.course-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.course-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.course-card:hover img {
+    transform: scale(1.1);
+}
+
+.course-content {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.course-content h5 {
+    font-weight: 600;
+}
+
+.course-content p {
+    font-size: 15px;
+    color: #666;
+    /* NEW: Truncate after 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Show 3 lines only */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-info span {
+    background: #eef1f7;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.course-btn {
+    width: 100%;
+    border: none;
+    padding: 11px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: auto;
+    transition-duration: 0.5s;
+}
+
+.course-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* ===== Modal ===== */
+.modal-content {
+    border-radius: 18px;
+}
+
+
+.modal-info span {
+    background: #f1f3f7;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.enroll-btn,
+.inquire-btn {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.enroll-btn:hover,
+.inquire-btn:hover {
+    background-color: var(--hover-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer-section {
+    background: #f0f7f5;
+    font-size: 18px;
+    /* margin-top: 90px; */
+}
+
+.footer-padding {
+    padding: 80px 30px;
+    /* default < lg */
+}
+
+/* lg and above */
+@media (max-width: 1190px) {
+    .footer-padding {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* @media(max-width:768px) {
+    .footer-section {
+        margin-top: 40px !important;
+    }
+} */
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.footer-list li a:hover,
+#address:hover,
+#footer-number a:hover {
+    color: var(--primary-color);
+}
+
+#footer-number a,
+#address {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.social-icons-footer i {
+    margin-right: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 40px;
+    background: #eceded;
+}
+
+.footer-bottom span {
+    color: var(--primary-color);
+}
+
+/* footer css over */
+
+
+/* scroll button */
+#scrollIndicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+#scrollIndicator svg {
+    transform: rotate(-90deg);
+}
+
+#scrollIndicator .bg {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 3;
+}
+
+#scrollIndicator .progress {
+    fill: none;
+    stroke: var(--hover-color);
+    stroke-width: 3;
+    stroke-dasharray: 163;
+    stroke-dashoffset: 163;
+    transition: stroke-dashoffset 0.2s linear;
+}
+
+#scrollIndicator .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: var(--hover-color);
+    font-weight: bold;
+}

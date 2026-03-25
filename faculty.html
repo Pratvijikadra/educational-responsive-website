@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Faculty - C.N Computer Education</title>
+    <link rel="icon" type="image/png" href="images/cn-logo-titlebar.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="faculty.css">
+    <!-- js file -->
+    <!-- <script src="faculty.js"></script> -->
+
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-xl shadow sticky-top my-navbar bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/nav-logo.png" alt="logo" height="80" width="175">
+            </a>
+
+            <!-- Toggler now opens OFFCANVAS -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto mx-auto gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="course.html">Our Courses</a></li>
+
+
+                    <li class="nav-item dropdown dropdown-offcanvas">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            Why CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i>
+                        </a>
+                        <ul class=" dropdown-menu  dropdown-menu-offcanvas">
+                            <li><a class="dropdown-item dropdown-item-offcanvas faculty" href="faculty.html">Faculty</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-item-offcanvas" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2 input-border" type="text" placeholder="Search..">
+                    <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><img src="images/nav-logo.png" alt="logo" height="65" width="145"></h5>
+            <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"> <a class="nav-link" href="course.html">Our Courses</a></li>
+
+                <li class="nav-item dropdown dropdown-offcanvas">
+                    <a class="nav-link" data-bs-toggle="dropdown" style="cursor: pointer;">Why
+                        CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-offcanvas">
+                        <li><a class="dropdown-item dropdown-item-offcanvas faculty" href="faculty.html">Faculty</a>
+                        </li>
+                        <li><a class="dropdown-item dropdown-item-offcanvas" href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+
+            <form class="d-flex mt-5" id="searchForm">
+                <input class="form-control me-2" type="text" id="searchInput" placeholder="Search..">
+                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- offcanvas over -->
+
+    <div class="container-xl mt-4 ">
+        <div class="home padding">
+            <a href="index.html" class="pe-2">Home</a> <i class="fa-solid fa-angle-right"></i>
+            <b style="font-size: 17px;" class="ps-2 pe-2">Why CnComputer</b><i class="fa-solid fa-angle-right"></i>
+            <b style="font-size: 17px;" class="ps-2">Faculty</b>
+        </div>
+    </div>
+
+
+    <!-- ===== FACULTY PAGE ===== -->
+    <section class="faculty-section py-5">
+        <div class="container-xl">
+
+            <!-- Title -->
+            <div class="text-center mb-5">
+                <h1 class="faculty-title">Our Expert Faculty</h1>
+                <p class="faculty-subtitle">
+                    Learn from experienced instructors who bring real-world industry knowledge into the classroom.
+                </p>
+            </div>
+
+            <!-- Faculty Cards -->
+            <div class="row g-4">
+
+                <!-- Faculty 1 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="faculty-card h-100">
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Faculty">
+                        <h5>Mr. Rahul Sharma</h5>
+                        <p class="designation">Senior Java Trainer</p>
+
+                        <div class="faculty-tags">
+                            <span>Core Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <p class="experience">8+ Years Experience</p>
+
+                        <p class="faculty-bio">
+                            Industry-focused trainer with strong practical and project-based teaching approach.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Faculty 2 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="faculty-card h-100">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Faculty">
+                        <h5>Ms. Neha Patel</h5>
+                        <p class="designation">Web Development Instructor</p>
+
+                        <div class="faculty-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <p class="experience">6+ Years Experience</p>
+
+                        <p class="faculty-bio">
+                            Passionate about frontend development and helping students build strong UI skills.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Faculty 3 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="faculty-card h-100">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Faculty">
+                        <h5>Mr. Amit Verma</h5>
+                        <p class="designation">Python & Data Trainer</p>
+
+                        <div class="faculty-tags">
+                            <span>Python</span>
+                            <span>Data Science</span>
+                            <span>AI/ML</span>
+                        </div>
+
+                        <p class="experience">7+ Years Experience</p>
+
+                        <p class="faculty-bio">
+                            Simplifies complex concepts and focuses on data-driven real-world applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Faculty 4 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="faculty-card h-100">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Faculty">
+                        <h5>Mr. Kunal Mehta</h5>
+                        <p class="designation">Accounting & Tally Expert</p>
+
+                        <div class="faculty-tags">
+                            <span>Tally</span>
+                            <span>GST</span>
+                            <span>Accounting</span>
+                        </div>
+
+                        <p class="experience">10+ Years Experience</p>
+
+                        <p class="faculty-bio">
+                            Expert in practical accounting with deep knowledge of GST and compliance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Why Faculty Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="faculty-why text-center">
+                        <h4>Why Learn From Our Faculty?</h4>
+                        <ul>
+                            <li>Industry experienced & certified trainers</li>
+                            <li>Practical and project-based teaching</li>
+                            <li>Personal guidance & doubt solving</li>
+                            <li>Career mentoring and interview preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-3">
+                <h5 class="mb-3">Learn from the best. Build your future with confidence.</h5>
+                <a href="course.html" class="btn view-course-btn me-2">View Courses</a>
+                <a href="contact.html" class="btn contact-btn btn-outline-secondary">Contact Us</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer-section">
+        <div class="container-xl footer-padding">
+            <div class="row g-4">
+
+                <!-- Column 1 -->
+                <div class="col-12 col-md-6 col-xl-4 ">
+                    <img src="images/nav-logo.png" alt="cn Logo" style="width: 200px;height: 90px;" class="mb-3">
+                    <p><strong> <i class="fas fa-map-marker-alt location-icon"></i> Address:</strong><br>
+                        <a href="https://www.google.com/maps/search/?api=1&query=C.N+Computer+Education,+305+Shashwat+Mahadev+Complex,+Vastral,+Ahmedabad"
+                            id="address" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="view location on map">
+                            305 - Shashwat Mahadev Complex,<br> Opp, Suryam Greens ,<br> New RTO Road, Vastral,<br>
+                            Ahmedabad-382418</a>
+                    </p>
+
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-md-6 col-xl">
+                    <h4 class="pb-4">Online Platform</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html"> About Us </a></li>
+                        <li><a href="course.html"> Course </a></li>
+                        <li><a href="faculty.html"> Faculty </a></li>
+                        <li><a href="blog.html"> Blog </a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12 col-md-6 col-xl">
+                    <h4 class="pb-4">Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html"> Contact Us </a></li>
+
+
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-12 col-md-6 col-xl">
+                    <h4 class="pb-4">Contacts</h4>
+
+                    <ul class="footer-list">
+                        <li id="footer-number"><a href="tel:+91 9054731523">+91 9054731523</a></li>
+                        <li id="footer-number"><a href="tel:+91 8485930451">+91 8485930451</a></li>
+                    </ul>
+
+                    <div class="social-icons-footer mt-3">
+                        <a href="https://www.facebook.com/share/1DTDqktGKe/?mibextid=wwXIfr" target="_blank"> <i
+                                class="fab fa-facebook-f" style="color: #1877F2;"></i></a>
+                        <a href="https://www.instagram.com/cn_computer_education_vastral?igsh=cHI4eTYya3oxcjh0&utm_source=qr"
+                            target="_blank"><i class="fab fa-instagram" style="color: purple;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            Copyright 2026 <span>C.N Computer Education</span>
+        </div>
+    </footer>
+
+
+
+
+    <!-- scroll button -->
+    <div id="scrollIndicator" onclick="scrollToTop()">
+        <svg width="60" height="60">
+            <circle cx="30" cy="30" r="26" class="bg"></circle>
+            <circle cx="30" cy="30" r="26" class="progress"></circle>
+        </svg>
+        <span class="arrow">↑</span>
+    </div>
+
+    <script>
+        const indicator = document.getElementById("scrollIndicator");
+        const progress = document.querySelector(".progress");
+        const totalLength = 163;
+
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const docHeight =
+                document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight;
+
+            if (scrollTop > 100) {
+                indicator.style.display = "block";
+            } else {
+                indicator.style.display = "none";
+            }
+
+            progress.style.strokeDashoffset =
+                totalLength - totalLength * scrollPercent;
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <script>
+        // contact
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>

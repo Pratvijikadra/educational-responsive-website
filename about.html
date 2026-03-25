@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - C.N Computer Education</title>
+    <link rel="icon" type="image/png" href="images/cn-logo-titlebar.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="about.css">
+    <!-- js file -->
+    <script src="about.js"></script>
+
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-xl shadow sticky-top my-navbar bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/nav-logo.png" alt="logo" height="80" width="175">
+            </a>
+
+            <!-- Toggler now opens OFFCANVAS -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto mx-auto gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link about" href="about.html">About Us</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="course.html">Our Courses</a></li>
+
+
+                    <li class="nav-item dropdown dropdown-offcanvas">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            Why CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i>
+                        </a>
+                        <ul class=" dropdown-menu  dropdown-menu-offcanvas">
+                            <li><a class="dropdown-item dropdown-item-offcanvas" href="faculty.html">Faculty</a></li>
+                            <li><a class="dropdown-item dropdown-item-offcanvas" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2 input-border" type="text" placeholder="Search..">
+                    <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><img src="images/nav-logo.png" alt="logo" height="65" width="145"></h5>
+            <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link about" href="about.html">About Us</a></li>
+                <li class="nav-item"> <a class="nav-link" href="course.html">Our Courses</a></li>
+
+                <li class="nav-item dropdown dropdown-offcanvas">
+                    <a class="nav-link" data-bs-toggle="dropdown" style="cursor: pointer;">Why
+                        CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-offcanvas">
+                        <li><a class="dropdown-item dropdown-item-offcanvas" href="faculty.html">Faculty</a></li>
+                        <li><a class="dropdown-item dropdown-item-offcanvas" href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+
+            <form class="d-flex mt-5" id="searchForm">
+                <input class="form-control me-2" type="text" id="searchInput" placeholder="Search..">
+                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- offcanvas over -->
+
+    <div class="container-xl mt-4 ">
+        <div class="home padding">
+            <a href="index.html" class="pe-2">Home</a> <i class="fa-solid fa-angle-right"></i>
+            <b style="font-size: 17px;" class="ps-2">About Us</b>
+        </div>
+    </div>
+
+
+
+    <!-- about section -->
+    <section class="about-section pt-5 about-padding ">
+        <div class="container-xl ">
+            <div class="row gy-4 sec-row">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6 col-md-12 left-col">
+                    <span class="text-danger fw-semibold" style="letter-spacing: 1px;">ABOUT US</span>
+                    <h1 class="fw-bold mt-2">
+                        We Provide Best <span class="text-danger">Education</span>
+                        Services For You.
+                    </h1>
+
+                    <p class="text-muted mt-4" style="font-size: 17px;">
+                        At C.N Computer Education, we deliver impactful education and training programs
+                        designed to build strong skills and knowledge, enabling individuals to achieve success in
+                        today’s competitive landscape.
+                    </p>
+
+                    <!-- Vision & Mission -->
+                    <div class="row mt-5 gy-3 ">
+                        <div class="col-md-6 col-sm-12">
+                            <h4 class="fw-semibold"> 🎯 Our Vision</h4>
+                            <p class="text-muted" style="font-size: 16.3px;">
+                                Our vision is to lead globally in skill and talent development by delivering an
+                                all-in-one IT ecosystem that includes training, assessments, and career opportunities,
+                                helping learners advance in today’s dynamic tech environment.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <h4 class="fw-semibold">🔭 Our Mission</h4>
+                            <p class="text-muted" style="font-size: 16.3px;">
+                                Our mission is to provide quality education and training programs that connect academic
+                                knowledge with real-world industry needs. We focus on:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGES -->
+                <div class="col-lg-6 col-md-8 mx-auto col-sm-10 col-12 ">
+                    <div class="img-grid">
+                        <img src="images/about-page-img1.jpg" alt="" style="border-top-left-radius: 100px; ">
+
+                        <img src="images/about-page-img2.jpg" alt="" class="about-img2">
+
+                        <img src="images/about-page-img3.jpg" alt="" class="about-img3">
+
+                        <img src="images/about-page-img4.png" alt="" style="border-bottom-right-radius: 100px; ;"
+                            class="about-img4">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- number system -->
+    <section class="stats-section py-5 number-padding">
+        <div class="container-xl number-row">
+            <div class="row g-4 text-center justify-content-center">
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="stat-card">
+                        <div class="icon bg-green">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h2 class="counter" data-target="15000">0</h2>
+                        <p>STUDENT ENROLLED</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="stat-card">
+                        <div class="icon bg-pink">
+                            <i class="bi bi-journal-check"></i>
+                        </div>
+                        <h2 class="counter" data-target="1500">0</h2>
+                        <p>CLASS COMPLETED</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="stat-card">
+                        <div class="icon bg-blue">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                        </div>
+                        <h2 class="counter" data-target="97500">0</h2>
+                        <p>SATISFACTION RATE</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- three card -->
+    <section class="why-section pb-2 card-padding">
+        <div class="container-xl ">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <small class="text-uppercase text-muted d-block mb-2 ">
+                    <B style="letter-spacing: 1px; font-weight: 600;">Why Choose Bascom Bridge</B>
+                </small>
+                <h2 class="main-title mt-3">
+                    A wonderful <span>Journey</span> from <br>
+                    CN Computer Education
+                </h2>
+                <div class="title-underline mx-auto"></div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row gx-xl-5 g-4">
+
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-sm-auto mx-md-0">
+                    <div class="feature-card shadow">
+                        <div class="img-wrap">
+                            <img src="images/about-card1.jpg" class="img-fluid" alt="">
+                            <div class="icon-circle bg-greens">
+                                <i class="bi bi-mortarboard"></i>
+                            </div>
+                        </div>
+                        <h4 class="heading">High Quality Courses</h4>
+                        <p>
+                            We provide well-structured, industry-relevant courses with expert guidance to help students
+                            build strong skills and achieve career success across multiple fields.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-sm-auto mx-md-0">
+                    <div class="feature-card shadow">
+                        <div class="img-wrap">
+                            <img src="images/about-card2.jpg" class="img-fluid" alt="">
+                            <div class="icon-circle bg-pinks">
+                                <i class="bi bi-key"></i>
+                            </div>
+                        </div>
+                        <h4 class="heading">Life Time Access</h4>
+                        <p>
+                            Learn at your own pace with unlimited, lifetime access to all course materials, updates, and
+                            resources—anytime, anywhere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 mx-sm-auto mx-md-0">
+                    <div class="feature-card shadow">
+                        <div class="img-wrap">
+                            <img src="https://media.istockphoto.com/id/1947499362/photo/happy-group-of-business-people-discussing-strategy-during-team-meeting-at-the-office-desk.jpg?s=612x612&w=0&k=20&c=UXPrlQx09d8EP4_kTdAa-vC2LxD_ppY1tiG7eTPGVbE="
+                                class="img-fluid" alt="">
+                            <div class="icon-circle bg-blues">
+                                <i class="bi bi-person-video3"></i>
+                            </div>
+                        </div>
+                        <h4 class="heading">Expert Instructors</h4>
+                        <p>
+                            Learn from highly experienced and skilled instructors who provide practical knowledge,
+                            real-world insights, and personalized guidance for your success.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <section class="contact-strip-section pb-5 position-relative">
+        <div class="container-xl px-2">
+
+            <div class="contact-strip mx-auto">
+                <div class="row align-items-center text-center text-md-start g-4">
+
+                    <!-- Left -->
+                    <div class="col-md-5 text-md-end mb-md-auto">
+                        <h5 class="d-block  mb-1" style="font-weight: 400;">Get In Touch:</h5>
+                        <h3 class="mb-0"> <a href="mailto:cncomputereducation@gmail.com" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" title="Mail Us"
+                                style="text-decoration: none; color: white; font-weight: 700;">cncomputereducation<br>@gmail.com</a>
+                        </h3>
+                    </div>
+
+                    <!-- OR -->
+                    <div class="col-md-2 d-flex justify-content-center">
+                        <div class="or-circle">or</div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-md-5">
+                        <h5 class="d-block mb-1" style="font-weight: 400;">Call Us Via:</h5>
+                        <h3 class="mb-1"><a href="tel:+91 9054731523"
+                                style="text-decoration: none; color: white; font-weight: 700;" data-bs-toggle="tooltip"
+                                data-bs-placement="right" title="Call Us">+91
+                                9054731523</a></h3>
+                        <h3 class="mb-0"><a href="tel:+91 8485930451"
+                                style="text-decoration: none; color: white; font-weight: 700;" data-bs-toggle="tooltip"
+                                data-bs-placement="right" title="Call Us">+91
+                                8485930451</a></h3>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact over -->
+
+
+    <!-- video -->
+    <section class=" testimonial-section">
+        <div class="container-xl">
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6">
+
+                    <span class="small-title">TESTIMONIALS</span>
+                    <h2 class="main-title">
+                        What Our Students<br>Have To Say
+                    </h2>
+                    <div class="title-underline mb-4" style="margin-top: -15px;"></div>
+
+                    <!-- Bootstrap Carousel -->
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-interval="4000">
+
+                        <div class="carousel-inner">
+
+                            <!-- ITEM 1 -->
+                            <div class="carousel-item active">
+                                ⭐⭐⭐⭐⭐
+                                <p>
+                                    This web development course it's truly
+                                    helps you become a skilled web developer - this website also developed by
+                                    me!
+                                </p>
+                                <div class="user">
+                                    <img src="images/my-img2.jpeg">
+                                    <div>
+                                        <strong>Pratvi Jikadra</strong><br>
+                                        <small>Web Developer</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 2 -->
+                            <div class="carousel-item">
+                                ⭐⭐⭐⭐⭐
+                                <p>
+                                    I had an excellent experience with CN Computer Education.it is a
+                                    best for advance leval programing like Django react, node JS etc..
+                                </p>
+                                <div class="user">
+                                    <img src="images/boy1.jpg">
+                                    <div>
+                                        <strong>Meetrajsinh Chudasama</strong><br>
+                                        <small>Student</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 3 -->
+                            <div class="carousel-item">
+                                ⭐⭐⭐⭐⭐
+                                <p>
+                                    Good class for advance excel and advance accounting faculty
+                                    teach in very deeply and advance level like corporate.
+                                </p>
+                                <div class="user">
+                                    <img src="images/boy2.jpg">
+                                    <div>
+                                        <strong>Noshin Shaikh</strong><br>
+                                        <small>Accountant</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- RIGHT VIDEO -->
+                <div class="col-lg-5 col-md-8 mx-auto col-sm-10 col-12">
+                    <div class="video-card">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="img-fluid">
+
+                        <div class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            <span></span>
+                            <span></span>
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+
+                        <div class="video-text">
+                            <h5>Take a Video Tour to Learn<br>Intro of Campus</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button class="btn-close close-btn" data-bs-dismiss="modal"></button>
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- video over -->
+
+
+
+    <footer class="footer-section">
+        <div class="container-xl footer-padding">
+            <div class="row g-4">
+
+                <!-- Column 1 -->
+                <div class="col-12 col-md-6 col-xl-4 ">
+                    <img src="images/nav-logo.png" alt="cn Logo" style="width: 200px;height: 90px;" class="mb-3">
+                    <p><strong> <i class="fas fa-map-marker-alt location-icon"></i> Address:</strong><br>
+                        <a href="https://www.google.com/maps/search/?api=1&query=C.N+Computer+Education,+305+Shashwat+Mahadev+Complex,+Vastral,+Ahmedabad"
+                            id="address" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="view location on map">
+                            305 - Shashwat Mahadev Complex,<br> Opp, Suryam Greens ,<br> New RTO Road, Vastral,<br>
+                            Ahmedabad-382418</a>
+                    </p>
+
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-md-6 col-xl">
+                    <h4 class="pb-4">Online Platform</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html"> About Us </a></li>
+                        <li><a href="course.html"> Course </a></li>
+                        <li><a href="faculty.html"> Faculty </a></li>
+                        <li><a href="blog.html"> Blog </a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12 col-md-6 col-xl">
+                    <h4 class="pb-4">Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="contact.html"> Contact Us </a></li>
+
+
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-12 col-md-6 col-xl">
+                    <h4 class="pb-4">Contacts</h4>
+
+                    <ul class="footer-list">
+                        <li id="footer-number"><a href="tel:+91 9054731523">+91 9054731523</a></li>
+                        <li id="footer-number"><a href="tel:+91 8485930451">+91 8485930451</a></li>
+                    </ul>
+
+                    <div class="social-icons-footer mt-3">
+                        <a href="https://www.facebook.com/share/1DTDqktGKe/?mibextid=wwXIfr" target="_blank"> <i
+                                class="fab fa-facebook-f" style="color: #1877F2;"></i></a>
+                        <a href="https://www.instagram.com/cn_computer_education_vastral?igsh=cHI4eTYya3oxcjh0&utm_source=qr"
+                            target="_blank"><i class="fab fa-instagram" style="color: purple;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            Copyright 2026 <span>C.N Computer Education</span>
+        </div>
+    </footer>
+
+
+
+
+    <!-- scroll button -->
+    <div id="scrollIndicator" onclick="scrollToTop()">
+        <svg width="60" height="60">
+            <circle cx="30" cy="30" r="26" class="bg"></circle>
+            <circle cx="30" cy="30" r="26" class="progress"></circle>
+        </svg>
+        <span class="arrow">↑</span>
+    </div>
+
+    <script>
+        const indicator = document.getElementById("scrollIndicator");
+        const progress = document.querySelector(".progress");
+        const totalLength = 163;
+
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const docHeight =
+                document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight;
+
+            if (scrollTop > 100) {
+                indicator.style.display = "block";
+            } else {
+                indicator.style.display = "none";
+            }
+
+            progress.style.strokeDashoffset =
+                totalLength - totalLength * scrollPercent;
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+
+
+    <script>
+        // review
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const reviews = document.querySelectorAll(".review");
+            let current = 0;
+
+            setInterval(() => {
+                reviews[current].classList.remove("active");
+
+                current = (current + 1) % reviews.length;
+
+                reviews[current].classList.add("active");
+            }, 3000);
+
+        });
+    </script>
+
+
+
+    <script>
+        // contact
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
+
+    <!-- number system js -->
+
+    <script>
+        let started = false;
+
+        function formatK(value) {
+            let k = value / 1000;
+            return Number.isInteger(k) ? k + "K" : k.toFixed(1).replace(/\.0$/, "") + "K";
+        }
+
+        function startCounter() {
+            if (started) return;
+            started = true;
+
+            document.querySelectorAll(".counter").forEach(counter => {
+                const target = +counter.dataset.target;
+                let count = 0;
+                const speed = target / 100;
+
+                const update = () => {
+                    count += speed;
+                    if (count < target) {
+                        if (target === 100) {
+                            counter.innerText = Math.floor(count) + "%";
+                        } else if (target >= 1000) {
+                            counter.innerText = formatK(count);
+                        } else {
+                            counter.innerText = Math.floor(count);
+                        }
+                        requestAnimationFrame(update);
+                    } else {
+                        if (target === 100) {
+                            counter.innerText = "100%";
+                        } else if (target >= 1000) {
+                            counter.innerText = formatK(target);
+                        } else {
+                            counter.innerText = target + "+";
+                        }
+                    }
+                };
+                update();
+            });
+        }
+
+        window.addEventListener("scroll", () => {
+            const section = document.querySelector(".stats-section");
+            const pos = section.getBoundingClientRect().top;
+            const screen = window.innerHeight;
+            if (pos < screen - 100) {
+                startCounter();
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
